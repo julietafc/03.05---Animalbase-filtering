@@ -15,7 +15,6 @@ const Animal = {
 function start() {
   console.log("ready");
 
-  // TODO: Add event-listeners to filter and sort buttons
   selectedButton();
   loadJSON();
 }
@@ -35,7 +34,6 @@ async function loadJSON() {
 function prepareObjects(jsonData) {
   allAnimals = jsonData.map(preapareObject);
 
-  // TODO: This might not be the function we want to call first
   displayList(allAnimals);
 }
 
